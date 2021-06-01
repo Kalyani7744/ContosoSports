@@ -52,7 +52,7 @@ build-and-deploy-webapp:
         dotnet build ${{ env.AZURE_WEBAPP_PROJECT_NAME }} --configuration Release
         dotnet publish ${{ env.AZURE_WEBAPP_PROJECT_NAME }} -c Release -o './webdeploy'
 
-    # Deploy to Azure Application Service
+    # Deploy to Azure Application Servic
     - name: 'Deploy public web portal'
         uses: azure/webapps-deploy@v2
         with:
